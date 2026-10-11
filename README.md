@@ -22,7 +22,9 @@ At \(t = 1\) (\(J = g = 1\)), five transpiler seeds:
 
 The useful depth peaks at **M\* = 4** on both processors. Eight Trotter steps is a better formula and a worse device. Processor B can afford that extra depth; Processor A cannot. Every extra SWAP on A becomes exactly three CX gates.
 
-![Fidelity versus Trotter steps](results/figures/fidelity_vs_steps.png)
+![Fidelity versus Trotter steps](results/figures/fidelity_vs_steps.svg)
+
+The same figures are embedded in [results/figures.html](results/figures.html). `python main.py` also writes PNG copies locally.
 
 ## Run it
 
