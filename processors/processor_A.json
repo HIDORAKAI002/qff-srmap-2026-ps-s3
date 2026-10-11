@@ -1,0 +1,18 @@
+{
+  "name": "processor_A",
+  "description": "Official Phase 1 Processor A. 5-qubit branching graph from the organizer simulation configuration. Not a path.",
+  "num_qubits": 5,
+  "coupling_map": [[0, 1], [1, 2], [1, 3], [3, 4]],
+  "basis_gates": ["rz", "sx", "x", "cx"],
+  "source": "QFF SRMAP 2026 Phase 1 benchmark authority: edges (0,1), (1,2), (1,3), (3,4).",
+  "noise": {
+    "type": "shared_phase1_calibration",
+    "single_qubit_depolarizing": 0.001,
+    "single_qubit_gates": ["x", "sx"],
+    "two_qubit_depolarizing": 0.005,
+    "two_qubit_gates": ["cx"],
+    "rz_policy": "virtual_z_noiseless",
+    "readout_error": null,
+    "note": "Shared A/B calibration from the problem-statement framework (~0.1% single-qubit, ~0.5% two-qubit). Rz is treated as a virtual Z and is not noised."
+  }
+}

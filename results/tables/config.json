@@ -1,0 +1,46 @@
+{
+  "ps_code": "S3",
+  "ps_name": "Trotter Error vs Noise",
+  "track": "Quantum Simulation",
+  "n_spins": 4,
+  "periodic": true,
+  "J": 1.0,
+  "g": 1.0,
+  "initial_state": "neel",
+  "observable": "Z0",
+  "primary_time": 1.0,
+  "trotter_orders": [
+    1,
+    2
+  ],
+  "primary_order": 1,
+  "steps": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "time_grid": [
+    0.25,
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "time_grid_steps": 4,
+  "optimization_level": 1,
+  "transpiler_seeds": [
+    0,
+    1,
+    7,
+    21,
+    42
+  ],
+  "primary_seed": 42,
+  "basis_gates": [
+    "rz",
+    "sx",
+    "x",
+    "cx"
+  ]
+}

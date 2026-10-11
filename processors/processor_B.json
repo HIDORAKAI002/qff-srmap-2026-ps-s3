@@ -1,0 +1,18 @@
+{
+  "name": "processor_B",
+  "description": "Official Phase 1 Processor B. 9-qubit coupling graph from the organizer simulation configuration.",
+  "num_qubits": 9,
+  "coupling_map": [[0, 1], [1, 2], [1, 6], [2, 3], [2, 5], [2, 6], [3, 4], [4, 5], [5, 6], [6, 7], [6, 8], [8, 0]],
+  "basis_gates": ["rz", "sx", "x", "cx"],
+  "source": "QFF SRMAP 2026 Phase 1 benchmark authority: 9-qubit edge list in Problem_Statment_Details.pdf and Processor_AB_Benchmark_Configuration_FINAL.pdf.",
+  "noise": {
+    "type": "shared_phase1_calibration",
+    "single_qubit_depolarizing": 0.001,
+    "single_qubit_gates": ["x", "sx"],
+    "two_qubit_depolarizing": 0.005,
+    "two_qubit_gates": ["cx"],
+    "rz_policy": "virtual_z_noiseless",
+    "readout_error": null,
+    "note": "Same noise channel as Processor A. Architecture, not a different calibration, is the controlled variable."
+  }
+}
